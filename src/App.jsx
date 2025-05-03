@@ -1,5 +1,5 @@
-import Navbar from './components/navbar'
-import LandingPage from './components/landing-page'
+import Navbar from './components/Navbar'
+import LandingPage from './components/LandingPage'
 import './assets/stylesheets/App.css'
 
 function App() {

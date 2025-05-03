@@ -1,8 +1,10 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@config "../../../tailwind.config.js";
 @import "tailwindcss";
 
 @font-face {
   font-family: 'kyiv-sans';
-  src: url('../fonts/kyiv-sans.ttf') format('truetype');
+  src: url('/fonts/kyiv-sans.ttf') format('truetype');
 }
 
 :root {
@@ -29,3 +31,4 @@ button:hover {
 button:focus,
 button:focus-visible {
 }
+

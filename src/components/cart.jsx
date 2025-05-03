@@ -2,7 +2,8 @@ export default function Cart() {
   return(
     <>
       <div>
-        Cart items #
+        <i className="fa-solid fa-cart-shopping"></i>
+        Cart Items #
       </div>
     </>
   )
