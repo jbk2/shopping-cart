@@ -8,7 +8,7 @@ export default {
         'kyiv-sans': ["kyiv-sans"],
       },
       keyframes: {
-        weightPulse: {
+        weightColorPulse: {
           '0%, 100%': {
             fontVariationSettings: "'wght' 200",
             color: '#82AAE9',
@@ -21,7 +21,7 @@ export default {
         },
       },
       animation : {
-        'weight-pulse': 'weightPulse 2.5s ease-in-out infinite',
+        'weight-color-pulse': 'weightColorPulse 2.5s ease-in-out infinite',
       }
     },
   },

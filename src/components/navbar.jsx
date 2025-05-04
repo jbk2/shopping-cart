@@ -5,7 +5,7 @@ export default function Navbar() {
   return(  
     <header className="bg-blue-100">
       <div id="promo-banner" className="bg-blue-200">
-        <p className='max-w-[20rem] mx-auto text-sm italic font-kyiv-sans animate-weight-pulse py-1'>
+        <p className='max-w-[20rem] mx-auto text-sm italic font-kyiv-sans animate-weight-color-pulse py-1'>
           2 for 1 summer sale now on -
           <a href='#'> shop here</a> 
         </p>
