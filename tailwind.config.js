@@ -7,8 +7,21 @@ export default {
       fontFamily: {
         'kyiv-sans': ["kyiv-sans"],
       },
-      colors: {
-        debug: '#ff00ff',
+      keyframes: {
+        weightPulse: {
+          '0%, 100%': {
+            fontVariationSettings: "'wght' 200",
+            color: '#82AAE9',
+          },
+          '50%': {
+            fontVariationSettings: "'wght' 400",
+            color: '#4C7BC7',
+          },
+          
+        },
+      },
+      animation : {
+        'weight-pulse': 'weightPulse 2.5s ease-in-out infinite',
       }
     },
   },
