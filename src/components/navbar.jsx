@@ -11,7 +11,7 @@ export default function Navbar() {
         </p>
       </div>
       <div id="content" className="flex items-center justify-between py-4 mx-6">
-        <h1 id="logo-type" className="font-kyiv-sans font-[850] text-4xl">E-comm Store</h1>
+        <h1 id="logo-type" className="font-kyiv-sans font-[650] text-2xl">E-comm Store</h1>
         <Cart />
       </div>
       <hr className='border-blue-200'></hr>
