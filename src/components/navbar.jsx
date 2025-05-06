@@ -1,4 +1,4 @@
-import Cart from './Cart'
+import Cart from './CartNavEl'
 
 export default function Navbar() {
   

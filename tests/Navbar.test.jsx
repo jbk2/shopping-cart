@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { render, screen } from "@testing-library/react";
 import Navbar from "/src/components/Navbar.jsx";
 
-describe("Navbar component", {}, () => {
+describe("Navbar component", () => {
   it("should contain a LogoType", () => {
     render(<Navbar />);
     expect(screen.getByRole("heading").textContent).toMatch(/E-Comm Store/i);
@@ -10,8 +10,7 @@ describe("Navbar component", {}, () => {
   
   it("should contain a Cart component", () => {
     render(<Navbar />);
-    const banner = screen.getByRole("banner");
-    const icon = banner.querySelector(".fa-cart-shopping");
-    expect(icon).toBeInTheDocument();
+    expect(screen.getByTestId('cart')).toBeInTheDocument();
   })
+  
 });
