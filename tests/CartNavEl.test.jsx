@@ -1,26 +1,27 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from 'react-router-dom';
+import { CartProvider } from '../src/contexts/CartContext';
 import CartNavEl from "/src/components/CartNavEl.jsx";
 
 describe("CartNavEl component", () => {
-  it("should contain a Cart icon", () => {
+
+  beforeEach(() => {
     render(
-      <MemoryRouter>
-        <CartNavEl />
-      </MemoryRouter>
+      <CartProvider>
+        <MemoryRouter>
+          <CartNavEl />
+        </MemoryRouter>
+      </CartProvider>
     );
+  })
+  it("should contain a Cart icon", () => {
     const cartElement = screen.getByTestId("cart");
     const icon = cartElement.querySelector(".fa-cart-shopping");
     expect(icon).toBeInTheDocument();
   })
   
   it("should contain an items in cart count", () => {
-    render(
-      <MemoryRouter>
-        <CartNavEl />
-      </MemoryRouter>
-    );
     const cartElement = screen.getByTestId("cart");
     const cartCount = cartElement.querySelector('#cart-count');
     expect(cartCount.textContent).toBe('0');
