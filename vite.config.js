@@ -13,4 +13,13 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './tests/setup.js'
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://fakestoreapi.com',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })
