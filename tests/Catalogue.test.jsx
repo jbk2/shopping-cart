@@ -3,10 +3,10 @@ import { render, screen } from "@testing-library/react";
 import Catalogue from "/src/components/Catalogue.jsx";
 
 describe("Catalogue component", () => {
-  it.skip("", () => {
+  it("should show all products items", () => {
     render(<Catalogue />);
-    // const card = screen.getByTestId("card");
-    // expect('').toBeInTheDocument();
+    const products = screen.getByText(/Product catalogue goes here/);
+    expect(products).toBeInTheDocument();
   })
   
 });

@@ -1,4 +1,5 @@
-import Cart from './CartNavEl'
+import { Link } from 'react-router-dom'
+import CartNavEl from './CartNavEl'
 
 export default function Navbar() {
   
@@ -7,12 +8,14 @@ export default function Navbar() {
       <div id="promo-banner" className="bg-blue-200">
         <p className='max-w-[20rem] mx-auto text-sm italic font-kyiv-sans animate-weight-color-pulse py-1'>
           2 for 1 summer sale now on -
-          <a href='#'> shop here</a> 
+          <Link to="/catalogue">shop here</Link>
         </p>
       </div>
       <div id="content" className="flex items-center justify-between py-4 mx-6">
-        <h1 id="logo-type" className="font-kyiv-sans font-[650] text-2xl">E-comm Store</h1>
-        <Cart />
+        <Link to="/">
+          <h1 id="logo-type" className="font-kyiv-sans font-[650] text-2xl">E-comm Store</h1>
+        </Link>
+        <CartNavEl />
       </div>
       <hr className='border-blue-200'></hr>
     </header>

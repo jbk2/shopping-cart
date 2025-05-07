@@ -2,7 +2,7 @@ import FishMat1 from "../assets/images/FishMat1.jpg";
 import FishMat2 from "../assets/images/FishMat2.webp";
 import FishMat3 from "../assets/images/FishMat3.jpg";
 
-export default function LandingPage() {
+export default function LandingContent() {
   return(
     <div className="m-6 mt-10 flex gap-8 flex-wrap">
       <h1 id="banner-headline" className="text-7xl/snug font-kyiv-sans
