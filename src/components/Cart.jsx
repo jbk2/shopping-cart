@@ -13,15 +13,15 @@ export default function Cart() {
   }
 
   return(
-    <>
-      <div id="cart-products">
+    <div className="flex m-10">
+      <div id="cart-products" className="w-[65vw] flex flex-col gap-6">
         {cartItems.map(item => 
-          <CartProduct item={item} />
+          <CartProduct key={item.product.id} item={item} />
         )} 
       </div>
       <div id="cart-form">
         Form section here
       </div>
-    </>
+    </div>
   )
 }
