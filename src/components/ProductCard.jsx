@@ -10,19 +10,28 @@ export default function ProductCard({ product }) {
   };
 
   return(
-    <div id={ product.id } className="p-3 border-1 rounded-lg max-w-60">
-      <h3 className="font-bold text-lg">{product.title}</h3>
-      <img src={product.image} alt={product.title} className="object-cover max-h-40"/>
-      <label htmlFor="noOfItems">No. Of Items</label>
-      <input
-        className="border-1 rounded w-10 ml-2 pl-1"
-        name="noOfItems"
-        type="number"
-        min="0"
-        step="1"
-        onChange={(e) => setQuantity(parseInt(e.target.value, 10))}
-      />
-      <button onClick={handleAddToCart}>Add to cart</button>
+    <div id={ product.id } className="p-3 border-1 rounded-lg
+      max-w-48 flex flex-col justify-between">
+      <div className='' id='product-content'>
+        <h3 className="font-bold text-lg line-clamp-2">{product.title}</h3>
+        <img src={product.image} alt={product.title} className="object-contain
+          max-h-40 mx-auto mt-2"/>
+      </div>
+
+      <div id='inputs' className='flex flex-col items-center mt-2'>
+        <label htmlFor="noOfItems" className='font-bold text-xs'>No. Of Items</label>
+        <div className='flex gap-2'>
+          <input
+            className="input w-12 h-8 pl-2"
+            name="noOfItems"
+            type="number"
+            min="0"
+            step="1"
+            onChange={(e) => setQuantity(parseInt(e.target.value, 10))}
+          />
+          <button onClick={handleAddToCart} className='btn btn-primary h-8 p-2'>Add to cart</button>
+        </div>
+      </div>
     </div>  
   )
 }

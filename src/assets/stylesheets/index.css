@@ -1,6 +1,7 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @config "../../../tailwind.config.js";
 @import "tailwindcss";
+@plugin "daisyui";
 
 @font-face {
   font-family: 'kyiv-sans';
