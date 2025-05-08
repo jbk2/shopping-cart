@@ -1,8 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from 'react-router-dom';
-import { CartProvider } from '../src/contexts/CartContext';
-import { useCart } from '../src/contexts/CartContext';
+import { CartProvider, useCart } from '/src/contexts/CartContext';
 import CartNavEl from "/src/components/CartNavEl.jsx";
 
 function CartTestDriver() {

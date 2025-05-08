@@ -1,31 +1,36 @@
-import FishMat1 from "../assets/images/FishMat1.jpg";
-import FishMat2 from "../assets/images/FishMat2.webp";
-import FishMat3 from "../assets/images/FishMat3.jpg";
+import { Link } from 'react-router-dom';
+import stationary1 from "../assets/images/Hobo1.webp";
+import stationary2 from "../assets/images/Hobo2.jpg";
+import stationary3 from "../assets/images/Hobo3.jpg";
 
 export default function LandingContent() {
   return(
     <div className="m-6 mt-10 flex gap-8 flex-wrap">
       <h1 id="banner-headline" className="text-7xl/snug font-kyiv-sans
-        font-[700] w-2xl self-center">
-        Beautiful kitchen table products
+        font-[700] w-3xl self-center">
+        Beautiful stationary products
       </h1>
-      <a href="">
+      <Link to="/catalogue">
         <img
-          src={FishMat1}
+          src={stationary1}
           alt=""
           className="min-w-m max-w-lg"
         />
-      </a>
-      <img
-        src={FishMat2}
-        alt=""
-        className="min-w-m max-w-lg"
-      />
-      <img
-        src={FishMat3}
-        alt=""
-        className="min-w-m max-w-lg"
-      />
+      </Link>
+      <Link to="/catalogue">
+        <img
+          src={stationary2}
+          alt=""
+          className="min-w-m max-w-lg"
+        />
+      </Link>
+      <Link to="/catalogue">
+        <img
+          src={stationary3}
+          alt=""
+          className="min-w-m max-w-lg"
+        />
+      </Link>
     </div>
   )
 }
