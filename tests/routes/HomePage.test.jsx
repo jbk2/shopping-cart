@@ -15,7 +15,7 @@ describe("HomePage component", {}, () => {
     );
 
     const navbar = screen.getByRole("banner");
-    const landingContent = screen.getByText(/Beautiful kitchen table products/);
+    const landingContent = screen.getByText(/Beautiful stationary products/);
     
     expect(navbar).toBeInTheDocument();
     expect(landingContent).toBeInTheDocument();
