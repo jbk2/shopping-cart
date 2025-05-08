@@ -7,6 +7,7 @@ describe("ProductCard component", () => {
     render(<ProductCard />);
     // const card = screen.getByTestId("card");
     // expect('').toBeInTheDocument();
+    // It has a number input, add to cart button, image and title
   })
   
 });

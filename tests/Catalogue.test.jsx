@@ -15,10 +15,14 @@ describe("Catalogue component", () => {
         <Catalogue products={mockProducts} />
       </CartProvider>
     );
-    const products = screen.getByText(/Product catalogue goes here/);
-    const productA = screen.getByText(/Product A/);
-    expect(products).toBeInTheDocument();
-    expect(productA).toBeInTheDocument();
-  })
   
+    const productA = screen.getByText(/Product A/);
+    const productB = screen.getByText(/Product B/);
+    const priceA = screen.getByText(/£9.99/);
+    const priceB = screen.getByText(/£19.99/);
+    expect(productA).toBeInTheDocument();
+    expect(productB).toBeInTheDocument();
+    expect(priceA).toBeInTheDocument();
+    expect(priceB).toBeInTheDocument();
+  })
 });
