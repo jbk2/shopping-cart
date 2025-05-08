@@ -10,7 +10,7 @@ export default function CartNavEl() {
       <div id="cart" className='flex items-center' data-testid="cart">
         <i className="fa-solid fa-cart-shopping"></i>
         <p>Cart Items -
-          <span id='cart-count'>{ totalCartItems }</span>
+          <span id='cart-count'> { totalCartItems }</span>
         </p>
       </div>
     </Link>

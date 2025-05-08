@@ -16,11 +16,11 @@ export default function ProductCard({ product }) {
         <h3 className="font-bold text-lg line-clamp-2">{product.title}</h3>
         <img src={product.image} alt={product.title} className="object-contain
           max-h-40 mx-auto mt-2"/>
-        <p id='price' className='mt-2 block text-sm
-          font-bold ml-1'>£{product.price}</p>
       </div>
 
       <div id='inputs' className='flex flex-col items-center mt-2'>
+        <p id='price' className='block text-sm mb-1
+          font-bold ml-1 self-start'>£{product.price}</p>
         <label htmlFor="noOfItems" className='font-bold text-xs'>No. Of Items</label>
         <div className='flex gap-2'>
           <input
