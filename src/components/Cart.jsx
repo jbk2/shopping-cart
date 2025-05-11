@@ -1,5 +1,6 @@
 import { CartProvider, useCart } from "/src/contexts/CartContext"
 import CartProduct from "./CartProduct";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const { cartItems, cartTotal } = useCart()
@@ -7,7 +8,15 @@ export default function Cart() {
 
   if(cartItemsQuantity < 1) {
     return(
-      <p  id="cart">No items in cart</p>
+      <p id="cart" className="m-10 w-fit mx-auto text-4xl font-light">
+        No items in cart - shop
+        { ' ' }
+        <Link to={'/catalogue'} className="hover:cursor-pointer
+          text-blue-800 inline-block hover:text-blue-700 hover:scale-[1.02]
+          transition-transform transform underline">
+            here
+        </Link>
+      </p>
     )
   }
 
