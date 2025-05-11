@@ -4,11 +4,11 @@ import { MemoryRouter } from "react-router-dom";
 import { CartProvider } from '../../src/contexts/CartContext';
 import CartPage from "/src/routes/CartPage";
 
-describe("CataloguePage", {}, () => {
-  it("renders the Navbar & Catalogue components", () => {
+describe("CartPage", {}, () => {
+  it("renders the Navbar & Cart components", () => {
     render(
       <CartProvider>
-        <MemoryRouter initialEntries={["/catalogue"]}>
+        <MemoryRouter initialEntries={["/cart"]}>
           <CartPage />
         </MemoryRouter>
       </CartProvider>
