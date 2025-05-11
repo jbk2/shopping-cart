@@ -4,6 +4,7 @@ export default function CartProduct({item}) {
   const { addToCart, removeFromCart } = useCart();
   const product = item.product;
   const quantity = item.quantity;
+  const itemTotal = product.price * quantity
 
   function handleRemoveProduct() {
     removeFromCart(product);
@@ -45,7 +46,7 @@ export default function CartProduct({item}) {
           </select>
           <p className="font-medium text-xl">
             <span className="mr-1 text-sm font-medium italic">£</span>
-            {product.price}
+            { itemTotal }
           </p>
         </div>
       </div>
