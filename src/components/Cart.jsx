@@ -26,8 +26,8 @@ export default function Cart() {
   const total = subTotal + delivery + tax;
 
   return(
-    <div data-testid="cart" className="flex m-10">
-      <div id="cart-products" className="w-[65vw] flex flex-col gap-6">
+    <div data-testid="cart" className="flex m-10 justify-around">
+      <div id="cart-products" className=" flex flex-col gap-6">
         {cartItems.map(item => 
           <CartProduct key={item.product.id} item={item} />
         )}
@@ -55,17 +55,70 @@ export default function Cart() {
         </div>
       </div>
       <div data-testid="cart">
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-          <legend className="fieldset-legend">Page details</legend>
-
-          <label className="label">Title</label>
-          <input type="text" className="input" placeholder="My awesome page" />
-
-          <label className="label">Slug</label>
-          <input type="text" className="input" placeholder="my-awesome-page" />
-
-          <label className="label">Author</label>
-          <input type="text" className="input" placeholder="Name" />
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box max-w-md border p-4">
+          <legend className="fieldset-legend text-xl">Make payment</legend>
+          <div className="flex gap-4">
+            <div>
+              <label className="label">First Name</label>
+              <input type="text" className="input" placeholder="John" />
+            </div>
+            <div>
+              <label className="label">Last Name</label>
+              <input type="text" className="input" placeholder="Smith" />
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div>
+              <label className="label">Address 1</label>
+              <input type="text" className="input" placeholder="house no.1" />
+            </div>
+            <div>
+              <label className="label">Address 1</label>
+              <input type="text" className="input" placeholder="Apple Street" />
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div>
+              <label className="label">Address 3</label>
+              <input type="text" className="input" placeholder="Bannana Village" />
+            </div>
+            <div>
+              <label className="label">Address 4</label>
+              <input type="text" className="input" placeholder="Appleton" />
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div>
+              <label className="label">Address 5</label>
+              <input type="text" className="input" placeholder="Orange County" />
+            </div>
+            {/* <div>
+              <label className="label">Address 6</label>
+              <input type="text" className="input" placeholder="AB12 34C" />
+            </div> */}
+          </div>
+          <hr  className="border-gray-300 my-4"/>
+          <div className="flex gap-4">
+            <div>
+              <label className="label">Cardholder Name</label>
+              <input type="text" className="input" placeholder="Jack Smith"/>
+            </div>
+            <div>
+              <label className="label">Card Number</label>
+              <input type="text" className="input" placeholder="1234 5678 9876 5432"/>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div>
+              <label className="label">Expiration Date</label>
+              <input type="text" className="input" placeholder="01/01/2021"/>
+            </div>
+            <div>
+              <label className="label">Security Code</label>
+              <input type="text" className="input" placeholder="- - -"/>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-4">Pay now</button>
         </fieldset>
       </div>
     </div>
