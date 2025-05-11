@@ -15,7 +15,7 @@ describe("CataloguePage", {}, () => {
     );
 
     const navbar = screen.getByRole("banner");
-    const cart = screen.getByText(/Cart contents here/);
+    const cart = screen.getByTestId('cart');
     
     expect(navbar).toBeInTheDocument();
     expect(cart).toBeInTheDocument();
