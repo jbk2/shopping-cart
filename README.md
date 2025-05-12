@@ -1,4 +1,4 @@
-# The Odin Project - React Course, [project 2](https://www.theodinproject.com/lessons/react-new-shopping-cart#project-solution): Shopping Cart
+# The Odin Project - React Course, [project 3](https://www.theodinproject.com/lessons/react-new-shopping-cart#project-solution): Shopping Cart
 
 daisy UI tailwind, vitest, react
 
