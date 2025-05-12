@@ -1,5 +1,5 @@
 import LandingContent from "../components/LandingContent"
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/Navbar";
 
 export default function HomePage() {
   return(
