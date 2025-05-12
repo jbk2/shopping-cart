@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import Cart from "../components/Cart";
 
 export default function CartPage() {
