@@ -22,7 +22,7 @@ A simple React Shopping Cart SPA with React to demonstrate hooks, state, context
 - Run `npm run dev` to start the development server
 - Open the browser and navigate to `http://localhost:5173/`
   ### To use the hosted app
-- Open the browser and navigate to ``
+- Open the browser and navigate to `https://shopping-cart-4hp.pages.dev/`
 
 ### Todo's
   - Tests:
